@@ -47,7 +47,8 @@ function SteadyState(p::NamedTuple;
     ss = (U=U,q=q,
           Pss=Pss,Qss=Qss,
           vfss=vfss,vfAss=vfAss,vfNAss=vfNAss,EVss=EVss,
-          ξstarss=ξstarss,kpolicyAss=kpolicyAss,kpolicyNAss=kpolicyNAss,lpolicyss=lpolicyss,profitss=profitss,
+          ξstarss=ξstarss,kpolicyAss=kpolicyAss,kpolicyNAss=kpolicyNAss,
+          lpolicyss=lpolicyss,profitss=profitss,
           Dist_kz=Dist_kz)
 
 end

@@ -2,7 +2,6 @@
 #SetUP !!!
 ########################################################
 rm(list=ls())
-setwd("~/Dropbox/02.Projects/2018.10.04_JMP/03.Model/FHANK-Ss_short_paper/2steadystate")
 #Pkg
 library(ggplot2)
 library(tidyr)

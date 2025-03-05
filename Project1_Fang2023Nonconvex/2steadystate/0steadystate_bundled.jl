@@ -44,7 +44,7 @@ for ik in 1:length(kplot)
     end
 end
 Δk_plot
-data = DataFrame(Δk_plot)
+data = DataFrame(Δk_plot,:auto)
 CSV.write("2steadystate/InvestmentRate_bundled.csv", data)
 
 
@@ -66,7 +66,7 @@ for ik in 1:length(kplot)
     end
 end
 Prob_plot
-data = DataFrame(Prob_plot)
+data = DataFrame(Prob_plot,:auto)
 CSV.write("2steadystate/Prob_of_Adjustment_bundled.csv", data)
 
 
@@ -111,4 +111,4 @@ tr_output.I  = (tr.TI .- tr.TI[1])./tr.TI[1] *100
 ### Save Results
 CSV.write("2steadystate/transition_bundled.csv", tr_output)
 # Readback
-tr_output = CSV.read("2steadystate/transition_bundled.csv",  copycols = true, typemap = Dict(Int64=>Float64))
+tr_output = CSV.read("2steadystate/transition_bundled.csv",  DataFrame)

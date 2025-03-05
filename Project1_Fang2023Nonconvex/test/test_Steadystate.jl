@@ -4,14 +4,14 @@ pwd()
 
 #Step1: Initialize steady state
 p = Param()
-ss = SteadyState(p;w=1.2)
+ss = SteadyState(p;w=1.0)
 
 ss.U
 ss.q
 @show ss
 
 
-wss = @time find_SteadyState(p,ss;howard_on=false)
+wss = @time find_SteadyState(p,ss)
 
 @show ss.Qss
 

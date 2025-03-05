@@ -3,6 +3,8 @@ includet("../src/FHANK.jl")
 
 p = Param()
 
+p.kgrid
+
 
 u = Uncertainty(p,0)
 u.Δz[1]

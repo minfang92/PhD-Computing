@@ -2,7 +2,7 @@ pwd()
 include("../src/FHANK.jl")
 
 
-p = Param(;α = 0.25, ν = 0.60, S = 0.33, ξbar = 0.45, ϕ_k = 2.4, σz = 0.05)
+p = Param()
 ss = SteadyState(p;U=0,w=1.2)
 @show wss = @time find_SteadyState(p,ss;howard_on=false)
 

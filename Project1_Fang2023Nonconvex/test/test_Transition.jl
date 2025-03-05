@@ -16,6 +16,9 @@ ss.vfss
 T = 100
 tr = Transition(p,ss,T)
 
+tr.TvfA[100][1]
+
+
 
 find_transition_RBC(p, tr)
 

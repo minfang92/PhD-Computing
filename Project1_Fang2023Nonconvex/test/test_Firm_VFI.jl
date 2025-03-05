@@ -16,7 +16,7 @@ typeof(U)
 
 
 
-p.ξbar
+p.ξupbar
 
 p.vf
 p.vfA
